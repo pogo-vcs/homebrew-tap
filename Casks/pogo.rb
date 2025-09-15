@@ -3,7 +3,7 @@ cask "pogo" do
   name "pogo"
   desc "A centralized version control system that is simple and easy to use."
   homepage "https://github.com/pogo-vcs/pogo"
-  version "0.2.0"
+  version "0.5.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -21,11 +21,20 @@ cask "pogo" do
   manpage "docs/man/pogo-completion-powershell.1"
   manpage "docs/man/pogo-completion-zsh.1"
   manpage "docs/man/pogo-completion.1"
+  manpage "docs/man/pogo-daemon-install.1"
+  manpage "docs/man/pogo-daemon-run.1"
+  manpage "docs/man/pogo-daemon-start.1"
+  manpage "docs/man/pogo-daemon-stop.1"
+  manpage "docs/man/pogo-daemon-uninstall.1"
+  manpage "docs/man/pogo-daemon.1"
   manpage "docs/man/pogo-describe.1"
   manpage "docs/man/pogo-edit.1"
   manpage "docs/man/pogo-gc.1"
   manpage "docs/man/pogo-info.1"
   manpage "docs/man/pogo-init.1"
+  manpage "docs/man/pogo-invite-create.1"
+  manpage "docs/man/pogo-invite-list.1"
+  manpage "docs/man/pogo-invite.1"
   manpage "docs/man/pogo-log.1"
   manpage "docs/man/pogo-new.1"
   manpage "docs/man/pogo-push.1"
@@ -43,22 +52,22 @@ cask "pogo" do
   on_macos do
     on_intel do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Darwin_x86_64.tar.gz"
-      sha256 "fce4270fd97d4effdd8d2e1f7b20721ea5e5b60772fc10c1b4a2cb3dc4413b07"
+      sha256 "6639a06469616d6b05e852e7cc8b0a7c0fdcf522887e5fd089b9be94946113d3"
     end
     on_arm do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Darwin_arm64.tar.gz"
-      sha256 "f23f4426bd20da35a3d353265aab165743ee6429ecb06dd360d7370a61d30b5a"
+      sha256 "6eb0628c907dbec2e2261887e1ce4ba72da4edc313eb31aaafe6c84ac0c28846"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Linux_x86_64.tar.gz"
-      sha256 "fe507d642dfa712f98cb9f938c1d04d72783fdb6585d8e022afe4eabd7782cca"
+      sha256 "ef00d004eb3b1f8572986c4de0d2a8aa8e1b53da5f428493f7ecbd235016044b"
     end
     on_arm do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Linux_arm64.tar.gz"
-      sha256 "5bfef6a397998578ba5394cb9bbd9c612b7ef8f97588d17c3bef1020f084a4b3"
+      sha256 "0b42516ad1447ae831c32b0be148a1e3a5359f62e641134df95c09394f306441"
     end
   end
 
