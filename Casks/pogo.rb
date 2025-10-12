@@ -3,7 +3,7 @@ cask "pogo" do
   name "pogo"
   desc "A centralized version control system that is simple and easy to use."
   homepage "https://github.com/pogo-vcs/pogo"
-  version "0.12.0"
+  version "0.12.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -65,22 +65,22 @@ cask "pogo" do
   on_macos do
     on_intel do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Darwin_x86_64.tar.gz"
-      sha256 "d3573b103f1b8c14a9eab34cfeb1d8b2d7ef717cf845da4029eed63169b7f44b"
+      sha256 "c88469d611ddc810020ccc913616aac4b85b10e591075ff61a536e92a576f916"
     end
     on_arm do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Darwin_arm64.tar.gz"
-      sha256 "559eb7aa56a87dcf490df319e462500583b1ac96b15b04d86b2a620d36a8829d"
+      sha256 "2863d1c36311a58fa9064e873bbd68ebf40ae4d5fa7e393019de0eb2ea3a490b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Linux_x86_64.tar.gz"
-      sha256 "962e85f61af832fd14ca2571b0b1b3d6090b77651328a8704b062713448e9dba"
+      sha256 "793cba12559babcb1d796011d9444560c32587f873993852006838e756a3df1d"
     end
     on_arm do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Linux_arm64.tar.gz"
-      sha256 "9cb14fa701052a01aefef55f578f3dca7af778ff39155a9ba33c05256d75a5d4"
+      sha256 "3be9886ef9dd9e2d8f2069daa87533a19c26ed317fe49d21cfaa4616bb62a04b"
     end
   end
 
