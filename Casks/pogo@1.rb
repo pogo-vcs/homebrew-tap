@@ -3,7 +3,7 @@ cask "pogo@1" do
   name "pogo@1"
   desc "A centralized version control system that is simple and easy to use."
   homepage "https://github.com/pogo-vcs/pogo"
-  version "1.1.0"
+  version "1.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -31,17 +31,12 @@ cask "pogo@1" do
   manpage "docs/man/pogo-completion-powershell.1"
   manpage "docs/man/pogo-completion-zsh.1"
   manpage "docs/man/pogo-completion.1"
-  manpage "docs/man/pogo-daemon-install.1"
-  manpage "docs/man/pogo-daemon-run.1"
-  manpage "docs/man/pogo-daemon-start.1"
-  manpage "docs/man/pogo-daemon-stop.1"
-  manpage "docs/man/pogo-daemon-uninstall.1"
-  manpage "docs/man/pogo-daemon.1"
   manpage "docs/man/pogo-describe.1"
   manpage "docs/man/pogo-diff.1"
   manpage "docs/man/pogo-discard.1"
   manpage "docs/man/pogo-edit.1"
   manpage "docs/man/pogo-gc.1"
+  manpage "docs/man/pogo-gui.1"
   manpage "docs/man/pogo-info.1"
   manpage "docs/man/pogo-init.1"
   manpage "docs/man/pogo-invite-create.1"
@@ -70,22 +65,18 @@ cask "pogo@1" do
   on_macos do
     on_intel do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Darwin_x86_64.tar.gz"
-      sha256 "68f31907d0385bfea2ee34893cb221d001b37848a734409505b1f46f02a182d1"
+      sha256 "9f0db3f3dae30b4bc376acd121c75cd2d62cbe47876bddb666a8807b6683cbcb"
     end
     on_arm do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Darwin_arm64.tar.gz"
-      sha256 "1a02ca9cdc732a069122d68c3e6956443f9be4dcda263a7da03af22914a5b779"
+      sha256 "8159b4a00aa92df03dc403279a15da9f575027b79f6f5760c2dd974a519a4b7c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Linux_x86_64.tar.gz"
-      sha256 "3959ade2ead626bb793a9b46384e793d5b878aa0fc9fa5701aaf6556ff2ee894"
-    end
-    on_arm do
-      url "https://github.com/pogo-vcs/pogo/releases/download/v#{version}/pogo_Linux_arm64.tar.gz"
-      sha256 "71f8a344e26ee94609181fa5927a481fde66c218bb8c8186ad8420f3a904d6bb"
+      sha256 "3937a0402005bc87964fc6b677e12415c2fff7c0653ca65247868494256e8d25"
     end
   end
 
