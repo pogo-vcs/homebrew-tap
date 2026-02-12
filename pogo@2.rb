@@ -5,21 +5,21 @@
 class PogoAT2 < Formula
   desc "A centralized version control system that is simple and easy to use."
   homepage "https://github.com/pogo-vcs/pogo"
-  version "2.0.1"
+  version "2.1.0"
   license "Zlib"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pogo-vcs/pogo/releases/download/v2.0.1/pogo_Darwin_x86_64.tar.gz"
-      sha256 "b69b61393ca0febf5e882fd18d3618bcf8d17f853696c4e1584f11e54e12714b"
+      url "https://github.com/pogo-vcs/pogo/releases/download/v2.1.0/pogo_Darwin_x86_64.tar.gz"
+      sha256 "d8f82f61ec5157ba9ba3f1a3869cda9156fb9e7d8d82ae92eb63bd5bb8cedd49"
 
       def install
         bin.install "pogo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pogo-vcs/pogo/releases/download/v2.0.1/pogo_Darwin_arm64.tar.gz"
-      sha256 "6ec51d6066f1c20071a3cc1b82308b24a3698a3eb9e7dff29b9abb81b9917f62"
+      url "https://github.com/pogo-vcs/pogo/releases/download/v2.1.0/pogo_Darwin_arm64.tar.gz"
+      sha256 "fe93ee0e48e7d9ab0862d645b70314c35cb4081bfd46fdaed299d16107b5407f"
 
       def install
         bin.install "pogo"
@@ -29,8 +29,8 @@ class PogoAT2 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pogo-vcs/pogo/releases/download/v2.0.1/pogo_Linux_x86_64.tar.gz"
-      sha256 "23b9ba5ec7a304d1e6bfe693619266f09ccc499060a9263029a533c4a5f186f6"
+      url "https://github.com/pogo-vcs/pogo/releases/download/v2.1.0/pogo_Linux_x86_64.tar.gz"
+      sha256 "b66501da7f9581297fcd833f06143b9eea18fc556c9c03e6589c9425f3bf1ac1"
       def install
         bin.install "pogo"
       end
